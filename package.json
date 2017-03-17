@@ -1,6 +1,6 @@
 {
   "name": "capa-consume-routes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Casa-Parks' Laravel route consumer.",
   "main": "dist/index.js",
   "directories": {
