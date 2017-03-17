@@ -1,0 +1,323 @@
+[
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "_debugbar/open",
+    "name": "debugbar.openhandler",
+    "action": "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController@handle",
+    "middleware": [],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "_debugbar/clockwork/{id}",
+    "name": "debugbar.clockwork",
+    "action": "Barryvdh\\Debugbar\\Controllers\\OpenHandlerController@clockwork",
+    "middleware": [],
+    "parameters": [
+      "id"
+    ]
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "_debugbar/assets/stylesheets",
+    "name": "debugbar.assets.css",
+    "action": "Barryvdh\\Debugbar\\Controllers\\AssetController@css",
+    "middleware": [],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "_debugbar/assets/javascript",
+    "name": "debugbar.assets.js",
+    "action": "Barryvdh\\Debugbar\\Controllers\\AssetController@js",
+    "middleware": [],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "POST"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "broadcasting/auth",
+    "name": null,
+    "action": "Illuminate\\Broadcasting\\BroadcastController@authenticate",
+    "middleware": [
+      "web"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "sign-in",
+    "name": "get::auth.sign-in",
+    "action": "App\\Http\\Controllers\\Auth\\AuthorisationController@showSignIn",
+    "middleware": [
+      "web",
+      "guest"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "sign-in/twitter",
+    "name": "get::auth.sign-in.twitter",
+    "action": "App\\Http\\Controllers\\Auth\\TwitterController@process",
+    "middleware": [
+      "web",
+      "guest"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "sign-in/facebook",
+    "name": "get::auth.sign-in.facebook",
+    "action": "App\\Http\\Controllers\\Auth\\FacebookController@process",
+    "middleware": [
+      "web",
+      "guest"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "sign-in/twitter/authorise",
+    "name": "get::auth.sign-in.twitter.authorise",
+    "action": "App\\Http\\Controllers\\Auth\\TwitterController@authorise",
+    "middleware": [
+      "web"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "sign-in/facebook/authorise",
+    "name": "get::auth.sign-in.facebook.authorise",
+    "action": "App\\Http\\Controllers\\Auth\\FacebookController@authorise",
+    "middleware": [
+      "web"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "sign-out",
+    "name": "get::auth.sign-out",
+    "action": "App\\Http\\Controllers\\Auth\\AuthorisationController@signOut",
+    "middleware": [
+      "web"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "/",
+    "name": "get::home",
+    "action": "App\\Http\\Controllers\\HomeController@show",
+    "middleware": [
+      "web"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/settings",
+    "name": "get::me.settings",
+    "action": "App\\Http\\Controllers\\Me\\SettingsController@show",
+    "middleware": [
+      "web",
+      "auth"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "POST"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/settings",
+    "name": "post::me.settings",
+    "action": "App\\Http\\Controllers\\Me\\SettingsController@submit",
+    "middleware": [
+      "web",
+      "auth"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/link/twitter",
+    "name": "get::me.link.twitter",
+    "action": "App\\Http\\Controllers\\Auth\\TwitterController@process",
+    "middleware": [
+      "web",
+      "auth"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/unlink/twitter",
+    "name": "get::me.unlink.twitter",
+    "action": "App\\Http\\Controllers\\Auth\\TwitterController@unlink",
+    "middleware": [
+      "web",
+      "auth"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/link/facebook",
+    "name": "get::me.link.facebook",
+    "action": "App\\Http\\Controllers\\Auth\\FacebookController@process",
+    "middleware": [
+      "web",
+      "auth"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/unlink/facebook",
+    "name": "get::me.unlink.facebook",
+    "action": "App\\Http\\Controllers\\Auth\\FacebookController@unlink",
+    "middleware": [
+      "web",
+      "auth"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/enter",
+    "name": "get::me.enter",
+    "action": "App\\Http\\Controllers\\Me\\EntryController@show",
+    "middleware": [
+      "web",
+      "auth",
+      "not-entered"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "POST"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me/enter",
+    "name": "post::me.enter",
+    "action": "App\\Http\\Controllers\\Me\\EntryController@submit",
+    "middleware": [
+      "web",
+      "auth",
+      "not-entered"
+    ],
+    "parameters": []
+  },
+  {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "secure": false,
+    "domain": null,
+    "uri": "me",
+    "name": "get::me",
+    "action": "App\\Http\\Controllers\\Me\\OverviewController@show",
+    "middleware": [
+      "web",
+      "auth",
+      "entered"
+    ],
+    "parameters": []
+  }
+]

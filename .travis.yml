@@ -1,0 +1,13 @@
+sudo: false
+
+dist: trusty
+
+language: node_js
+
+node_js:
+  - "stable"
+  - "iojs"
+  - "6"
+  - "5"
+
+install: npm install
